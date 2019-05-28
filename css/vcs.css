@@ -1,3 +1,15 @@
 body{
     background-color: rgb(255, 208, 0);
 }
+h1 {
+    font-family: 'Baloo Bhai', cursive;
+}
+h3{
+    font-family: 'Varela Round', sans-serif;
+}
+h2{
+    font-family: 'Source Code Pro', monospace;
+}
+.testo {
+    font-family: 'Varela Round', sans-serif;   
+}

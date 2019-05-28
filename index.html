@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatibile" content="ie=edge">
 <link rel="stylesheet" type="text/css" href="css/vcs.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <title>VCS</title>
 <script src="js/vcs.js"></script>
 </head>
@@ -19,5 +22,58 @@
         When the first change is made, the resulting set is "revision 2", and so on. 
         Each revision is associated with a timestamp and the person making the change. 
         Revisions can be compared, restored, and with some types of files, merged.</h3>
+
+        <br>
+    <hr><br>
+    <div class="testo">
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt update</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt install git</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git --version
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --global user.name &quot;CHS-McClendon&quot;
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --global user.email &quot;mcclendon.mike@westada.org&quot;
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --list
+        user.name=CHS-McClendon
+        user.email=mcclendon.mike@westada.org
+        </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap</b></font>$ git init
+        </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ git config --help
+        </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ git init
+            Initialized empty Git repository in /var/www/html/lucap/projects/vcs/.git/
+            </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs/.git</b></font>$ ll
+                total 40
+                drwxr-xr-x 7 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>.</b></font>/
+                drwxrwxr-x 6 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>..</b></font>/
+                drwxr-xr-x 2 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>branches</b></font>/
+                -rw-r--r-- 1 compsci compsci   92 May 22 13:41 config
+                -rw-r--r-- 1 compsci compsci   73 May 22 13:41 description
+                -rw-r--r-- 1 compsci compsci   23 May 22 13:41 HEAD
+                drwxr-xr-x 2 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>hooks</b></font>/
+                drwxr-xr-x 2 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>info</b></font>/
+                drwxr-xr-x 4 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>objects</b></font>/
+                drwxr-xr-x 4 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>refs</b></font>/
+                </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs/.git</b></font>$ cd ..
+                    <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ rm -rf .git
+                    <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ ll</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ git status</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ touch .gitignore
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ gedit .gitignore</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ git add -A
+        <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ git status
+        </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ git reset
+        </pre>
+    <h3>Continue on Thursday 23 May</h3>
+
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs</b></font>$ git commit -m &quot;Initial commit&quot;</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/lucap/projects/vcs/GitHubClones</b></font>$ git ;</pre>
+</div>
 </body>
 </html>
